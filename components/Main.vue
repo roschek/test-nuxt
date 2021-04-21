@@ -4,9 +4,7 @@
       Приложение для поиска задач и выборки по пользователям
     </h1>
     <ul>
-      <li :v-for="item in GET_TODOS" :key="item.userId">
-        {{ item.title }}
-      </li>
+      <li :key="item.id" v-for="item in GET_TODOS">{{ item.title }}</li>
     </ul>
   </div>
 </template>
