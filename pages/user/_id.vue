@@ -4,6 +4,7 @@
       На главную
     </NuxtLink>
     <h1>Привет, это страничка пользователя</h1>
+    <h2>{{ $router.currentRoute.params.id }}</h2>
     <ul>
       <li v-for="item in currentTodo" :key="item.id">
         {{ item }}
